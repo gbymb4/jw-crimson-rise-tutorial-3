@@ -66,7 +66,8 @@ show_sample_images()
 class CIFAR10CNN(nn.Module):  
     def __init__(self):  
         super(CIFAR10CNN, self).__init__()  
-  
+        # 32x32x3
+    
         # First convolutional block  
         self.conv1 = nn.Conv2d(3, 32, kernel_size=3, padding=1)  # 32x32x32  
         self.relu1 = nn.ReLU()  
